@@ -1,0 +1,39 @@
+@mixin responsive($type: 'MAX', $max: null, $min: null) {
+    @if ($type == 'MAX') {
+        @media screen and (max-width: #{$max}px){
+            @content;
+        }
+    } @else if($type == 'MIN'){
+        @media screen and (min-width: #{$min}px){
+            @content;
+        }
+    } @else if($type == 'BOTH'){
+        @media screen and (min-width: #{$min}px) and (max-width: #{$max}px){
+            @content;
+        }
+    }
+}
+
+@mixin xs-down($max: $screen-xs) {
+    @include responsive('MAX', $max, null){
+        @content;
+    }
+}
+
+@mixin sm-down($max: $screen-sm) {
+    @include responsive('MAX', $max, null){
+        @content;
+    }
+}
+
+@mixin md-down($max: $screen-md) {
+    @include responsive('MAX', $max, null){
+        @content;
+    }
+}
+
+@mixin lg-down($max: $screen-lg) {
+    @include responsive('MAX', $max, null){
+        @content;
+    }
+}

@@ -1,0 +1,15 @@
+/* The main SCSS code go here! =) */
+body{
+    background-color: #c5c5c5;
+
+    @include sm-down{
+        background-color: #fff;
+    }
+}
+
+h1{
+    @include sm-down{
+        font-family: sans-serif;
+        color: #ff0000;
+    }
+}

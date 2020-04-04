@@ -1,0 +1,14 @@
+{
+	"dev": {
+		"root": "./src/",
+		"assets": "./src/assets/",
+		"css": "./src/assets/css/",
+		"scripts": "./src/assets/scripts/",
+		"scss": "./src/assets/scss/"
+	},
+	"dist": {
+		"root": "./dist/",
+		"assets": "./dist/assets/",
+		"css": "./dist/assets/css/"
+	}
+}
