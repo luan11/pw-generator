@@ -7,8 +7,8 @@
 		"scss": "./src/assets/scss/"
 	},
 	"dist": {
-		"root": "./dist/",
-		"assets": "./dist/assets/",
-		"css": "./dist/assets/css/"
+		"root": "./../",
+		"assets": "./../assets/",
+		"css": "./../assets/css/"
 	}
 }

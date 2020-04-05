@@ -1,20 +1,11 @@
-# Welcome to boilerplate (Gulp, Sass, ES6+, JS)
+# password-generator
 
-Developed by [Luan Novais : luan11](https://github.com/luan11)
+Generate random passwords
 
----
+__Last change__ > Sun Apr 05 2020 15:02:38 GMT-0300 (GMT-03:00)
 
-## Start guide
+__Compiled by__ > luandev-boilerplate
 
-### Presets
+__Created by__ > Luan Novais
 
-This application requires:
-- nodejs version: >=6.11.2 - [download nodejs here](https://nodejs.org/en/download/)
-- npm version: >=3.10.10 - [download npm here](https://www.npmjs.com/get-npm)
-- gulp installed as global
-    - How to install gulp as global? Use this command line:
-    ```js
-    npm i gulp -g
-    ```
-
----
+*Version __1.0.0__*

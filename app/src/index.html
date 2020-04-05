@@ -11,7 +11,7 @@
 </head>
 <body>  
 	<header>
-		<a href="#" target="_blank" rel="noopener" class="header-logo">
+		<a href="https://github.com/luan11" target="_blank" rel="noopener" class="header-logo">
 			<svg viewBox="0 0 356 69" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g id="text">
 					<path id="open" d="M19.888 68.608C17.056 68.608 14.776 68.248 13.048 67.528C11.32 66.856 10.048 65.848 9.23201 64.504C8.46401 63.16 8.08001 61.552 8.08001 59.68V44.776C8.08001 42.088 7.45601 40.168 6.20801 39.016C5.00801 37.864 2.94401 37.288 0.0160065 37.288V32.248C2.94401 32.248 5.00801 31.672 6.20801 30.52C7.45601 29.368 8.08001 27.448 8.08001 24.76V9.856C8.08001 7.936 8.46401 6.328 9.23201 5.032C10.048 3.688 11.32 2.68 13.048 2.008C14.776 1.288 17.056 0.927998 19.888 0.927998V5.608C17.536 5.608 15.88 5.92 14.92 6.544C13.96 7.168 13.48 8.128 13.48 9.424V25.264C13.48 27.856 12.784 29.944 11.392 31.528C10 33.112 7.96001 34.192 5.27201 34.768C7.96001 35.344 10 36.424 11.392 38.008C12.784 39.592 13.48 41.68 13.48 44.272V60.112C13.48 61.408 13.96 62.368 14.92 62.992C15.88 63.616 17.536 63.928 19.888 63.928V68.608Z" fill="black"/>
@@ -40,20 +40,22 @@
 				<div class="row flex-column justify-content-center align-items-center">
 					<div class="result">
 						<h2>Result</h2>
+						<small>Click two times on password to copy</small>
 						<div class="row">							
-							<div class="col-md-10">
-								<input readonly type="text" class="form-control" id="pw-generated">
+							<div class="col-lg-10 col-md-8">
+								<input readonly type="text" class="form-control w-100" id="pw-generated">
 							</div>
-							<div class="col-md-2">
-								<button type="button" id="pw-generate">Generate</button>
+							<div class="col-lg-2 col-md-4">
+								<button type="button" id="pw-generate" class="btn btn-default">Generate</button>
 							</div>
 						</div>
+						<small id="copy-alert" class="d-none">Copied!</small>
 					</div>
 					<div class="options">
 						<h2>Options</h2>
 						<div class="form-group">
 							<p>Password size (min: 4 / max: 64)</p>
-							<input type="number" min="4" max="64" id="" class="form-control" value="16">
+							<input type="number" min="4" max="64" id="pw-length" class="form-control" value="16">
 						</div>
 						<div class="form-group">
 							<label>
@@ -83,7 +85,7 @@
 	</main>
 
 	<footer>
-		<p>Powered by <a href="#" target="_blank" rel="noopener">luandev</a> | {{ year }} &copy;</p>
+		<p>Powered by <a href="https://github.com/luan11" target="_blank" rel="noopener">luandev</a> | {{ year }} &copy;</p>
 	</footer>
 
     <!-- build:js -->

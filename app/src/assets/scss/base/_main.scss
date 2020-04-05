@@ -1,0 +1,216 @@
+html {
+	height: 100%;
+}
+
+body {
+	background-color: $gray-dark;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+header {
+	background-color: $gray-darkest;
+	padding: 15px 0;
+	box-shadow: 0 4px 10px rgba($black, .15);
+
+	.header-logo {
+		display: block;
+		width: 160px;
+		height: 32px;
+		margin: 0 auto;
+
+		svg {
+			path {
+				fill: $blue;
+			}
+		}
+	}
+
+	.header-title {
+		text-transform: uppercase;
+		color: $gray-lighten;
+		text-align: center;
+		margin-bottom: 0;
+		margin-top: 10px;
+		letter-spacing: 4px;
+	}
+}
+
+footer {
+	background-color: $gray-darkest;
+	padding: 10px 0;
+	font-weight: $fw-light;
+	box-shadow: 0 -4px 10px rgba($black, .15);
+	
+	p {
+		margin-bottom: 0;
+		color: $gray-lighten;
+		text-align: center;
+
+		a {
+			color: $blue;
+		}
+	}
+}
+
+.form {
+	&-control {
+		&:not([type="checkbox"]) {
+			background-color: lighten($gray-darkest, 6%);
+			border: 1px solid $gray-dark;
+			height: 46px;
+			line-height: 46px;
+			padding: 0 15px;
+			color: darken($gray-lighten, 15%);
+			border-radius: 6px;
+			outline: none;
+			margin-bottom: 15px;
+
+			&:focus {
+				box-shadow: 0 0 10px rgba($blue, .50);
+			}
+		}
+	}
+
+	&-group {
+		label {
+			&:not(:last-child) {
+				margin-right: 15px;
+			}
+			
+			cursor: pointer;
+			
+			&::selection {
+				background: transparent;
+			}
+
+			@include xs-down {
+				display: block;
+
+				&:not(:last-child) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+.generator {
+	height: 100%;
+
+	@include xs-down {
+		padding: 60px 15px;
+	}
+
+	.container {
+		height: 100%;
+
+		> .row {
+			height: 100%;
+		}
+	}
+
+	.result, .options {
+		background-color: $gray-darkest;
+		width: 75%;
+		padding: 30px 50px;
+		border-radius: 6px;
+
+		@include md-down {
+			width: 100%;
+		}
+
+		h2, small, p, label {
+			color: $gray-lighten;
+		}
+
+		small {
+			margin-bottom: 6px;
+			display: inline-block;
+
+			&#copy-alert {
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				color: $blue;
+				font-weight: $fw-medium;
+			}
+		}
+	}
+
+	.result {
+		margin-bottom: 25px;
+	}
+}
+
+.btn {
+	height: 46px;
+	line-height: 46px;
+	width: 100%;
+	display: block;
+	border: 0;
+	border-radius: 6px;
+	outline: none;	
+	transition: all .3s linear;
+	font-weight: $fw-medium;
+	text-transform: uppercase;
+
+	@include xs-down {
+		margin-bottom: 23px;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&.btn-default {
+		background-color: $blue;
+		color: $gray-lighten;
+
+		&:hover {
+			background-color: darken($blue, 10%);
+		}
+
+		&:focus {
+			background-color: darken($blue, 20%);
+		}
+	}
+}
+
+.w {
+	&-25 {
+		width: 25% !important;
+	}
+
+	&-50 {
+		width: 50% !important;
+	}
+
+	&-75 {
+		width: 75% !important;
+	}
+
+	&-100 {
+		width: 100% !important;
+	}
+}
+
+.d {
+	&-none {
+		display: none !important;
+	}
+
+	&-block {
+		display: block !important;
+	}
+
+	&-inline-block {
+		display: inline-block !important;
+	}
+}
