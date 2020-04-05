@@ -1,7 +1,7 @@
 {
-    "name": "INSERT NAME OF PROJECT HERE",
-    "description": "INSERT DESCRIPTION OF PROJECT HERE",
-    "author": "INSERT THE NAME OF PROJECT AUTHOR HERE",
+    "name": "password-generator",
+    "description": "Generate random passwords",
+    "author": "Luan Novais",
     "author_uri": "https://github.com/luan11/",
     "version": "1.0.0"
 }
