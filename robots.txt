@@ -1,2 +1,3 @@
+Sitemap: https://luan11.github.io/pw-generator/sitemap.xml
 User-agent: *
 Disallow:
