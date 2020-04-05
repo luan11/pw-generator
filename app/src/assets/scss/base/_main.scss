@@ -214,3 +214,26 @@ footer {
 		display: inline-block !important;
 	}
 }
+
+#lang-change {
+	position: fixed;
+	display: block;
+	width: 40px;
+	height: auto;
+	right: 40px;
+	top: 40px;
+	transition: all .3s ease-in-out;
+
+	@include xs-down {
+		right: 15px;
+	}
+
+	&:hover {
+		transform: scale(1.2);
+	}
+
+	> img {
+		width: 40px;
+		height: auto;
+	}
+}

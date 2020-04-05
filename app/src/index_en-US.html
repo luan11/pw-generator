@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Gerador de senhas fortes</title>
+	<title>Strong password generator</title>
 	<meta name="author" content="Luan Novais">
-	<meta name="description" content="Obtenha senhas fortes para manter seus cadastros mais seguros.">
-	<meta name="keywords" content="Senha,Senha forte,Gerador,Segurança,Cadastro">
+	<meta name="author" content="Luan Novais">
+	<meta name="description" content="Get strong passwords to keep your registers more secure.">
+	<meta name="keywords" content="Password,Strong password,Generator,Security,Registration">
 	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -35,7 +35,7 @@
 				</g>
 			</svg>
 		</a>
-		<h3 class="header-title">Gerador de senhas</h3>
+		<h3 class="header-title">Password Generator</h3>
 	</header>
 	
 	<main>
@@ -43,43 +43,43 @@
 			<div class="container">
 				<div class="row flex-column justify-content-center align-items-center">
 					<div class="result">
-						<h2>Resultado</h2>
-						<small>Clique duas vezes na senha para copiá-la</small>
+						<h2>Result</h2>
+						<small>Click two times on password to copy</small>
 						<div class="row">							
 							<div class="col-lg-10 col-md-8">
 								<input readonly type="text" class="form-control w-100" id="pw-generated">
 							</div>
 							<div class="col-lg-2 col-md-4">
-								<button type="button" id="pw-generate" class="btn btn-default">Gerar</button>
+								<button type="button" id="pw-generate" class="btn btn-default">Generate</button>
 							</div>
 						</div>
-						<small id="copy-alert" class="d-none">Copiada!</small>
+						<small id="copy-alert" class="d-none">Copied!</small>
 					</div>
 					<div class="options">
-						<h2>Opções</h2>
+						<h2>Options</h2>
 						<div class="form-group">
-							<p>Tamanho da senha (min: 4 / máx: 64)</p>
+							<p>Password size (min: 4 / max: 64)</p>
 							<input type="number" min="4" max="64" id="pw-length" class="form-control" value="16">
 						</div>
 						<div class="form-group">
 							<label>
 								<input checked type="checkbox" class="form-control" id="pw-use-letters">
-								Letras
+								Letters
 							</label>
 
 							<label>
 								<input checked type="checkbox" class="form-control" id="pw-use-lucase">
-								Maiúsculas/Minúsculas
+								Lowercase/Uppercase
 							</label>
 
 							<label>
 								<input checked type="checkbox" class="form-control" id="pw-use-punctuation">
-								Pontuação
+								Punctuation
 							</label>
 
 							<label>
 								<input checked type="checkbox" class="form-control" id="pw-use-numbers">
-								Números
+								Numbers
 							</label>
 						</div>
 					</div>
@@ -89,11 +89,11 @@
 	</main>
 
 	<footer>
-		<p>Desenvolvido por <a href="https://github.com/luan11" target="_blank" rel="noopener">luandev</a> | {{ year }} &copy;</p>
+		<p>Powered by <a href="https://github.com/luan11" target="_blank" rel="noopener">luandev</a> | {{ year }} &copy;</p>
 	</footer>
 
-	<a href="index_en-US.html" id="lang-change" title="Versão em inglês americano">
-		<img src="assets/images/flag-usa.png" alt="USA">
+	<a href="index.html" id="lang-change" title="Brazilian portuguese version">
+		<img src="assets/images/flag-brazil.png" alt="Brazil">
 	</a>
 
     <!-- build:js -->
