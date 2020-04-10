@@ -80,6 +80,8 @@ footer {
 	}
 
 	&-group {
+		margin: 10px 0;
+
 		label {
 			&:not(:last-child) {
 				margin-right: 15px;
@@ -104,6 +106,7 @@ footer {
 
 .generator {
 	height: 100%;
+	padding: 40px 0;
 
 	@include xs-down {
 		padding: 60px 15px;

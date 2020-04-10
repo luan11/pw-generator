@@ -2,7 +2,7 @@
 
 Generate random passwords
 
-__Last change__ > Sun Apr 05 2020 20:21:46 GMT-0300 (GMT-03:00)
+__Last change__ > Fri Apr 10 2020 13:57:20 GMT-0300 (GMT-03:00)
 
 __Compiled by__ > luandev-boilerplate
 

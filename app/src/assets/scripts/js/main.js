@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		optLcUcEl = document.getElementById('pw-use-lucase'),
 		optPunctuationEl = document.getElementById('pw-use-punctuation'),
 		optNumbersEl = document.getElementById('pw-use-numbers'),
+		optAdditionalsEl = document.getElementById('pw-additionals'),
 		generateTrigger = document.getElementById('pw-generate');
 
 	const pwg = new PWGenerator(result => {
@@ -110,4 +111,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		updateResult();
 		checkLettersOnNoneChecked();
 	};
+
+	optAdditionalsEl.oninput = function() {
+		pwg.setAdditionals(this.value);
+		updateResult();
+	}
 });

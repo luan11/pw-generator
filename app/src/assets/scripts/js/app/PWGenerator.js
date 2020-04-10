@@ -11,14 +11,15 @@ export default class PWGenerator {
 	 * @param {Function} cb
 	 * @memberof PWGenerator
 	 */
-	constructor(cb) {
+	constructor(cb, additionals = "") {
 		this._data = {
 			letters: {
 				lc: "abcdefghijklmnopqrstuvwxyz",
 				uc: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 			},
 			punctuation: "!@#$%&*_-+=",
-			numbers: "0123456789"
+			numbers: "0123456789",
+			additionals: additionals
 		};
 		this._length = 16;
 		this._options = {
@@ -73,6 +74,16 @@ export default class PWGenerator {
 	setLength(size) {
 		this._length = size;
 	}
+	
+	/**
+	 * Set additionals chars to password
+	 *
+	 * @param {string} str
+	 * @memberof PWGenerator
+	 */
+	setAdditionals(str) {
+		this._data.additionals = str;
+	}
 
 	/**
 	 * Generate a password
@@ -81,7 +92,7 @@ export default class PWGenerator {
 	 * @memberof PWGenerator
 	 */
 	generate(cb) {
-		let conjunct = "";
+		let conjunct = this._data.additionals;
 
 		if(this._options.letters) conjunct += this._data.letters.lc;
 		if(this._options.letters && this._options.lcuc) conjunct += this._data.letters.uc;
