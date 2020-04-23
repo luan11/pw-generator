@@ -5,11 +5,11 @@ self.addEventListener('install', function(e) {
 		caches.open(CACHE_NAME)
 		.then(function(cache) {
 			return cache.addAll([
-				'/',
-				'/index.html',
-				'/index_en-US.html',
-				'/assets/css/style.css',
-				'/assets/js/bundle.min.js'
+				'/pw-generator/',
+				'/pw-generator/index.html',
+				'/pw-generator/index_en-US.html',
+				'/pw-generator/assets/css/style.css',
+				'/pw-generator/assets/js/bundle.min.js'
 			]);
 		})
 	);
