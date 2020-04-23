@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Gerador de senhas fortes</title>
+	<link rel="manifest" href="manifest.json">
 	<meta name="author" content="Luan Novais">
 	<meta name="description" content="Obtenha senhas fortes para manter seus cadastros mais seguros.">
 	<meta name="keywords" content="Senha,Senha forte,Gerador,Segurança,Cadastro">
@@ -102,6 +103,18 @@
 
     <!-- build:js -->
     <script src="./assets/scripts/bundle.min.js"></script>
-    <!-- endbuild -->
+	<!-- endbuild -->
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js')
+			.then(function () {
+				console.log('service worker registered');
+			})
+			.catch(function () {
+				console.warn('service worker failed');
+			});
+		}
+	</script>
 </body>
 </html>

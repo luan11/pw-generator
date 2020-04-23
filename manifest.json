@@ -1,0 +1,16 @@
+
+{
+	"name": "PasswordGenerator",
+	"short_name": "PWGenerator",
+	"theme_color": "transparent",
+	"background_color": "transparent",
+	"display": "standalone",
+	"start_url": "/",
+	"icons": [
+	  {
+		"src": "/assets/images/icon-512.png",
+		"sizes": "512x512",
+		"type": "image/png"
+	  }
+	]
+  }

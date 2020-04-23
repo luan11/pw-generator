@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Strong password generator</title>
-	<meta name="author" content="Luan Novais">
+	<link rel="manifest" href="manifest.json">
 	<meta name="author" content="Luan Novais">
 	<meta name="description" content="Get strong passwords to keep your registers more secure.">
 	<meta name="keywords" content="Password,Strong password,Generator,Security,Registration">
 	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -102,6 +103,18 @@
 
     <!-- build:js -->
     <script src="./assets/scripts/bundle.min.js"></script>
-    <!-- endbuild -->
+	<!-- endbuild -->
+	
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js')
+			.then(function () {
+				console.log('service worker registered');
+			})
+			.catch(function () {
+				console.warn('service worker failed');
+			});
+		}
+	</script>
 </body>
 </html>
