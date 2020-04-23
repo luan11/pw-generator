@@ -32,7 +32,7 @@ self.addEventListener('activate', function activator(e) {
 });
 
 self.addEventListener('fetch', function(e) {
-	event.respondWith(
+	e.respondWith(
 		caches.match(event.request).then(function(cachedResponse) {
 			return cachedResponse || fetch(event.request);
 		})
